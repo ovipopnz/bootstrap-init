@@ -20,3 +20,6 @@ lessc styles.less  style.css
 ##SCSS
 ### Install
 npm install --save-dev node-sass@4.7.2
+
+## Compile
+npm run scss
