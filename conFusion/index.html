@@ -34,7 +34,7 @@
                         class="fa fa-address-card fa-lg"></span> Contact</a></li>
             </ul>
             <span class="navbar-text">
-                <a data-toggle="modal" data-target="#loginModal">
+                <a id="loginButton" role="button">
                     <span class="fa fa-sign-in"></span> Login
                 </a>
             </span>
@@ -93,8 +93,7 @@
             </div>
 
             <div class="col-12 col-sm-3 align-self-center">
-                <a data-toggle="modal" data-target="#reserveTableModal" role="button"
-                   data-placement="bottom" class="btn btn-warning btn-lg btn-block">Reserve Table</a>
+                <a id="reserveTableButton" role="button" class="btn btn-warning btn-lg btn-block">Reserve Table</a>
             </div>
         </div>
     </div>
@@ -368,6 +367,12 @@
             }
 
         });
+        $('#loginButton').click(function () {
+            $('#loginModal').modal();
+        })
+        $('#reserveTableButton').click(function () {
+            $('#reserveTableModal').modal();
+        })
     })
 </script>
 </body>
